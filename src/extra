@@ -1,0 +1,35 @@
+const ambientLight = new THREE.AmbientLight(
+  0xffffff,
+  0.7
+);
+
+scene.add(ambientLight);
+
+const frontLight = new THREE.DirectionalLight(
+  0xffffff,
+  4.5
+);
+
+frontLight.position.set(0, 0, 10);
+scene.add(frontLight);
+
+const sideLight = new THREE.DirectionalLight(
+  0xffffff,
+  1.5
+);
+
+sideLight.position.set(-6, 4, 6);
+scene.add(sideLight);
+
+const fillLight = new THREE.DirectionalLight(
+  0xffffff,
+  0.5
+);
+
+fillLight.position.set(6, -2, 4);
+scene.add(fillLight);
+
+
+
+
+

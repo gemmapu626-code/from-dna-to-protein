@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From DNA to Protein</title>
+    <meta name="description" content="A simple introduction to DNA and transcription for AP Biology." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="From DNA to Protein" />
+    <meta property="og:description" content="A simple introduction to DNA and transcription for AP Biology." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="From DNA to Protein" />
+    <meta name="twitter:description" content="A simple introduction to DNA and transcription for AP Biology." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="lesson-card" aria-labelledby="step-title">
+        <span class="lesson-number" id="lesson-number" aria-hidden="true">01</span>
+
+    <div class="visual-stage" aria-label="Animated illustration for this step">
+      <div class="visual-scene scene-one active" data-scene="0">
+        <canvas
+          class="step-one-3d-canvas"
+          id="step-one-3d-canvas"
+          aria-label="Three-dimensional cartoon of DNA inside a nucleus"
+        ></canvas>
+        <div class="step-one-annotations" aria-hidden="true">
+          <span class="scene-annotation dna-annotation">DNA</span>
+          <span class="scene-annotation nucleus-annotation">Nucleus</span>
+          <span class="scene-annotation gene-annotation">Gene</span>
+          <span class="annotation-line dna-annotation-line"></span>
+          <span class="annotation-line nucleus-annotation-line"></span>
+          <span class="annotation-line gene-annotation-line"></span>
+        </div>
+        <div class="cell-shape">
+          <div class="nucleus">
+            <span class="nucleus-label">Nucleus</span>
+            <div class="dna-helix" aria-hidden="true">
+              <svg class="dna-svg" viewBox="0 0 240 620" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="dna-cyan-strand" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#1597dc" />
+                    <stop offset="0.45" stop-color="#7eeaff" />
+                    <stop offset="0.72" stop-color="#26b7ef" />
+                    <stop offset="1" stop-color="#0874bf" />
+                  </linearGradient>
+                  <linearGradient id="dna-purple-strand" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#7047cf" />
+                    <stop offset="0.45" stop-color="#d7a1ff" />
+                    <stop offset="0.72" stop-color="#a36dff" />
+                    <stop offset="1" stop-color="#5428a9" />
+                  </linearGradient>
+                  <linearGradient id="dna-blue-rung" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#c1f7ff" />
+                    <stop offset="0.48" stop-color="#4abced" />
+                    <stop offset="1" stop-color="#3b4fc6" />
+                  </linearGradient>
+                  <linearGradient id="dna-gene-rung" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#fff7ae" />
+                    <stop offset="0.46" stop-color="#ffb536" />
+                    <stop offset="1" stop-color="#ed5a35" />
+                  </linearGradient>
+                  <filter id="dna-glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="5" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <clipPath id="gene-window">
+                    <rect x="0" y="258" width="240" height="190" rx="16" />
+                  </clipPath>
+                </defs>
+                <g class="dna-rungs">
+                  <line class="dna-rung" x1="158" y1="25" x2="82" y2="25" />
+                  <line class="dna-rung" x1="130" y1="60" x2="110" y2="60" />
+                  <line class="dna-rung" x1="74" y1="95" x2="166" y2="95" />
+                  <line class="dna-rung" x1="104" y1="130" x2="136" y2="130" />
+                  <line class="dna-rung" x1="163" y1="165" x2="77" y2="165" />
+                  <line class="dna-rung" x1="133" y1="200" x2="107" y2="200" />
+                  <line class="dna-rung gene-rung" x1="72" y1="235" x2="168" y2="235" />
+                  <line class="dna-rung gene-rung" x1="91" y1="270" x2="149" y2="270" />
+                  <line class="dna-rung gene-rung" x1="157" y1="305" x2="83" y2="305" />
+                  <line class="dna-rung gene-rung" x1="145" y1="340" x2="95" y2="340" />
+                  <line class="dna-rung gene-rung" x1="75" y1="375" x2="165" y2="375" />
+                  <line class="dna-rung gene-rung" x1="111" y1="410" x2="129" y2="410" />
+                  <line class="dna-rung" x1="170" y1="445" x2="70" y2="445" />
+                  <line class="dna-rung" x1="133" y1="480" x2="107" y2="480" />
+                  <line class="dna-rung" x1="77" y1="515" x2="163" y2="515" />
+                  <line class="dna-rung" x1="93" y1="550" x2="147" y2="550" />
+                  <line class="dna-rung" x1="157" y1="585" x2="83" y2="585" />
+                </g>
+                <path
+                  class="dna-strand strand-cyan"
+                  pathLength="1"
+                  d="M 170 0 C 170 43, 120 43, 120 77 C 120 111, 70 111, 70 155 C 70 199, 120 199, 120 232 C 120 265, 170 265, 170 310 C 170 354, 120 354, 120 387 C 120 420, 70 420, 70 465 C 70 508, 120 508, 120 542 C 120 575, 170 575, 170 620"
+                />
+                <path
+                  class="dna-strand strand-purple"
+                  pathLength="1"
+                  d="M 70 0 C 70 43, 120 43, 120 77 C 120 111, 170 111, 170 155 C 170 199, 120 199, 120 232 C 120 265, 70 265, 70 310 C 70 354, 120 354, 120 387 C 120 420, 170 420, 170 465 C 170 508, 120 508, 120 542 C 120 575, 70 575, 70 620"
+                />
+                <path
+                  class="dna-strand gene-strand strand-cyan"
+                  clip-path="url(#gene-window)"
+                  d="M 170 0 C 170 43, 120 43, 120 77 C 120 111, 70 111, 70 155 C 70 199, 120 199, 120 232 C 120 265, 170 265, 170 310 C 170 354, 120 354, 120 387 C 120 420, 70 420, 70 465 C 70 508, 120 508, 120 542 C 120 575, 170 575, 170 620"
+                />
+                <path
+                  class="dna-strand gene-strand strand-purple"
+                  clip-path="url(#gene-window)"
+                  d="M 70 0 C 70 43, 120 43, 120 77 C 120 111, 170 111, 170 155 C 170 199, 120 199, 120 232 C 120 265, 70 265, 70 310 C 70 354, 120 354, 120 387 C 120 420, 170 420, 170 465 C 170 508, 120 508, 120 542 C 120 575, 70 575, 70 620"
+                />
+              </svg>
+              <span class="helix-rail helix-rail-left"></span>
+              <span class="helix-rail helix-rail-right"></span>
+              <span class="helix-rung rung-one"></span>
+              <span class="helix-rung rung-two"></span>
+              <span class="helix-rung rung-three"></span>
+              <span class="helix-rung rung-four"></span>
+              <span class="helix-rung rung-five"></span>
+              <span class="helix-rung rung-six"></span>
+              <span class="helix-rung rung-seven"></span>
+              <span class="helix-rung rung-eight"></span>
+              <span class="helix-rung rung-nine"></span>
+            </div>
+            <span class="dna-label">DNA</span>
+            <span class="gene-highlight" aria-label="Highlighted gene"></span>
+          </div>
+          <span class="cell-label">CELL</span>
+        </div>
+      </div>
+
+      <div class="visual-scene scene-two" data-scene="1" aria-hidden="true"></div>
+
+      <div class="visual-scene scene-three" data-scene="2" aria-hidden="true"></div>
+
+      <p class="scene-three-description">
+        The mRNA carries the instructions from the nucleus to the ribosome.
+      </p>
+
+      <div class="visual-scene scene-four" data-scene="3" aria-hidden="true">
+        <div class="translation-scene">
+
+          <!-- mRNA -->
+          <div class="translation-mrna">
+            <span class="mrna-label">mRNA</span>
+            <div class="mrna-strand">
+              <i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i>
+            </div>
+          </div>
+
+          <!-- Ribosome behind everything -->
+          <div class="translation-ribosome">
+            <div class="ribosome-large"></div>
+            <div class="ribosome-small"></div>
+          </div>
+
+          <!-- tRNA 1 -->
+          <div class="translation-trna trna-one">
+            <div class="trna-shape">
+              <span class="trna-arm trna-arm-left"></span>
+              <span class="trna-arm trna-arm-right"></span>
+              <span class="trna-stem"></span>
+            </div>
+
+            <span class="amino-acid amino-acid-one"></span>
+          </div>
+
+          <!-- tRNA 2 -->
+          <div class="translation-trna trna-two">
+            <div class="trna-shape">
+              <span class="trna-arm trna-arm-left"></span>
+              <span class="trna-arm trna-arm-right"></span>
+              <span class="trna-stem"></span>
+            </div>
+
+            <span class="amino-acid amino-acid-two"></span>
+          </div>
+
+          <!-- tRNA 3 -->
+          <div class="translation-trna trna-three">
+            <div class="trna-shape">
+              <span class="trna-arm trna-arm-left"></span>
+              <span class="trna-arm trna-arm-right"></span>
+              <span class="trna-stem"></span>
+            </div>
+
+            <span class="amino-acid amino-acid-three"></span>
+          </div>
+
+          <!-- Growing amino-acid chain -->
+          <div class="amino-acid-chain">
+            <span class="chain-amino chain-one"></span>
+            <span class="chain-amino chain-two"></span>
+            <span class="chain-amino chain-three"></span>
+            <span class="chain-amino chain-four"></span>
+            <span class="chain-amino chain-five"></span>
+          </div>
+
+          <!-- Labels -->
+          <span class="translation-label translation-mrna-label">
+            mRNA
+          </span>
+
+          <span class="translation-label translation-trna-label">
+            tRNA
+          </span>
+
+          <span class="translation-label translation-ribosome-label">
+            Ribosome
+          </span>
+
+          <span class="translation-label translation-chain-label">
+            growing amino-acid chain
+          </span>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div
+        class="visual-scene scene-five"
+        data-scene="4"
+        aria-hidden="true"
+      ></div>
+    </div>
+
+
+        <div
+          class="visual-scene scene-six"
+          data-scene="5"
+          aria-hidden="true"
+        >
+          <div id="scene-six-3d-container"></div>
+        </div>
+
+
+    <div class="scene-five-description">
+      The amino-acid chain folds into a specific three-dimensional shape to form a functional protein.
+    </div>
+
+    <div class="lesson-content" aria-live="polite">
+      <p class="step-kicker">Step <span id="step-number">1</span></p>
+      <h2 id="step-title" aria-hidden="true">DNA</h2>
+      <p class="step-description" id="step-description">DNA contains the instructions for making proteins.</p>
+    </div>
+
+        <div class="lesson-controls">
+          <button class="back-button" id="back-button" type="button" disabled>
+            <span aria-hidden="true">←</span> BACK
+          </button>
+
+          <button class="next-button" id="next-button" type="button">
+            NEXT <span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+
+          <button class="replay-button" id="replay-button" type="button" hidden>
+            REPLAY <span class="button-arrow" aria-hidden="true">↻</span>
+          </button>
+        </div>
+
+    <div class="progress-row">
+      <span class="progress-label" id="progress-label">Step 1 of 2</span>
+      <div class="progress-track" aria-hidden="true">
+        <span class="progress-fill" id="progress-fill"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="/src/script.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
