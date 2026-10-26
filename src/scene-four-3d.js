@@ -14,7 +14,7 @@ export function initStepFourScene() {
   description.className = "scene-four-description";
 
   description.textContent =
-    "During translation, the ribosome reads mRNA and joins amino acids together to build a protein.";
+    "During translation, the ribosome reads mRNA in groups of three nucleotides called codons. Transfer RNA (tRNA) molecules use their anticodons to deliver the corresponding amino acids, which the ribosome joins together with peptide bonds to build a polypeptide chain. Translation begins at a start codon and continues until a stop codon is reached.";
 
   container.appendChild(description);
   
