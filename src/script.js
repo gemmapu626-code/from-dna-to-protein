@@ -10,28 +10,28 @@ const steps = [
     lessonNumber: "01",
     title: "DNA",
     description:
-      "Genes are segments of DNA that contain instructions for making proteins.",
+      "DNA contains the genetic instructions that cells use to function and produce proteins. A gene is a segment of DNA that contains instructions for making a functional product, such as a protein or RNA molecule. ",
   },
   {
     number: "2",
     lessonNumber: "02",
     title: "TRANSCRIPTION",
     description:
-      "During transcription, RNA polymerase copies the gene into mRNA.",
+      "During transcription, RNA polymerase uses one DNA strand, called the template strand, to build a complementary mRNA strand. RNA polymerase reads the template strand in the 3′ to 5′ direction and builds the mRNA strand in the 5′ to 3′ direction, using uracil (U) instead of thymine (T).",
   },
   {
     number: "3",
     lessonNumber: "03",
     title: "mRNA LEAVES THE NUCLEUS",
     description:
-      "The mRNA carries the instructions from the nucleus to the ribosome.",
+      "In eukaryotic cells, pre-mRNA is processed by adding a 5′ cap and a poly-A tail, removing introns, and joining exons to produce mature mRNA. The mature mRNA exits the nucleus through a nuclear pore and travels to a ribosome in the cytoplasm for translation.",
   },
   {
     number: "4",
     lessonNumber: "04",
     title: "TRANSLATION",
     description:
-      "During translation, the ribosome reads the mRNA and builds an amino-acid chain.",
+      "",
   },
   {
     number: "5",
@@ -41,13 +41,6 @@ const steps = [
       "The amino-acid chain folds into a functional protein.",
   },
 
-  {
-    number: "6",
-    lessonNumber: "06",
-    title: "PROTEIN FOLDING",
-    description:
-      "The amino-acid chains fold into a three-dimensional protein structure."
-  },
 
 ];
 
