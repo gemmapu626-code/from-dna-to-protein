@@ -3074,17 +3074,17 @@ button {
 .lesson-card:has(.scene-five.active) .scene-five-description {
   position: fixed;
   left: 50%;
-  bottom: 100px;
+  bottom: 105px;
   transform: translateX(-50%);
-  width: min(800px, calc(100% - 48px));
-  margin: 0;
+  width: min(850px, 80vw);
   text-align: center;
   color: #ffffff;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  z-index: 50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  pointer-events: none;
 }
 
 
@@ -3103,3 +3103,11 @@ button {
   height: 700px;
   min-height: 620px;
 }
+.scene-five-description {
+  display: none;
+}
+
+.lesson-card:has(.scene-five.active) .scene-five-description {
+  display: block;
+}
+
